@@ -9,14 +9,13 @@
     <h1>Fill out your box dimensions and weight!</h1>
     <form action="/parcel" method="post">
       <label for="length">Length</label>
-      <input id="length" name="length" type="number">
+      <input id="length" name="length" type="number" required>
       <label for="width">Width</label>
-      <input id="width" name="width" type="number">
+      <input id="width" name="width" type="number" required>
       <label for="height">Height</label>
-      <input id="height" name="height" type="number">
+      <input id="height" name="height" type="number" required>
       <label for="weight">Weight</label>
-      <input id="weight" name="weight" type="number">
-
+      <input id="weight" name="weight" type="number" required>
       <button type="submit">Get Your Shipping Price!</button>
     </form>
   </body>

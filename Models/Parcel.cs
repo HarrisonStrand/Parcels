@@ -9,8 +9,10 @@ namespace Parcel.Models
     public int BoxHeight { get; set; }
     public int BoxWeight { get; set; }
 
+
     public double Volume()
     {
+      
       return BoxLength * BoxWidth * BoxHeight; 
     }
 
