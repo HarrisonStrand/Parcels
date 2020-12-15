@@ -14,4 +14,12 @@ namespace Parcel.Models
       return BoxLength * BoxWidth * BoxHeight; 
     }
   }
+
+  public class boxCalc
+  {
+    public int boxCost
+    {
+      return 4 * BoxNumber; 
+    }
+  }
 }

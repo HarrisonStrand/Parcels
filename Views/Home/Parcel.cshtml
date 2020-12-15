@@ -6,8 +6,8 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-  Your shipping cost is: @Model.Volume()
+  Based on your dimesions of: @Model.Length, @Model.Width, @Model.Height and your weight of: @Model.Weight
   <br>
-  Based on your dimesions of: 'dimesions' and your weight of: 'weight'
+  Your Total Shipping Price: @Model.ShipPrice()
   </body>
 </html>
