@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Shipping Form</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Fill out your box dimensions and weight!</h1>
+    <form action="/parcel" method="post">
+      <label for="length">Length</label>
+      <input id="length" name="length" type="number">
+      <label for="width">Width</label>
+      <input id="width" name="width" type="number">
+      <label for="height">Height</label>
+      <input id="height" name="height" type="number">
+      <label for="weight">Weight</label>
+      <input id="weight" name="weight" type="number">
+
+      <button type="submit">Get Your Shipping Price!</button>
+    </form>
+  </body>
