@@ -9,31 +9,27 @@ namespace Parcel.Models
     public int BoxHeight { get; set; }
     public int BoxWeight { get; set; }
 
-    public int Volume()
+    public double Volume()
     {
       return BoxLength * BoxWidth * BoxHeight; 
     }
 
-    public int ShipPrice()
+    public double ShipPrice()
     {
-      int CubicFeet = Volume();
+      double CubicFeet = Volume();
       if (CubicFeet < 3)
       {
-        return CubicFeet * .18;
+        return CubicFeet * BoxWeight * .18;
       }
-      else if (CubicFeet > 3 && < 8)
+      else if (CubicFeet > 3 && CubicFeet < 8)
       {
-        return CubicFeet * .22;
+        return CubicFeet * BoxWeight * .22;
       }
       else if (CubicFeet > 8)
       {
-        return Cubic Feet * .3;
+        return CubicFeet * BoxWeight * .3;
       }
-      else 
-      {
-        return "how many bodies do you have in there?";
-      }
+      return 0;
     }
-
   }
 }
